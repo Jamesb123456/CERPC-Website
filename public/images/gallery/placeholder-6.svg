@@ -1,0 +1,7 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#003366"/>
+  <text x="400" y="300" font-family="Arial" font-size="30" text-anchor="middle" fill="white">CERPC Community Event</text>
+  <circle cx="300" cy="200" r="50" fill="#ffcc00"/>
+  <circle cx="500" cy="200" r="50" fill="#ffcc00"/>
+  <path d="M300 350 Q400 450 500 350" stroke="#ffffff" stroke-width="5" fill="transparent"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#2a52be"/>
+  <text x="400" y="300" font-family="Arial" font-size="30" text-anchor="middle" fill="white">Central East RPC</text>
+  <rect x="320" y="150" width="160" height="80" fill="#ffffff"/>
+  <text x="400" y="200" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#2a52be">FiveM RP</text>
+  <path d="M300 350 H500 L480 400 H320 Z" fill="#ffcc00"/>
+</svg>
