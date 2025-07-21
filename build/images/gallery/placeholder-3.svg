@@ -1,0 +1,8 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#ce1126"/>
+  <text x="400" y="300" font-family="Arial" font-size="30" text-anchor="middle" fill="white">London Fire Brigade</text>
+  <rect x="300" y="150" width="200" height="140" fill="#ffffff"/>
+  <path d="M320 160 H480 V280 H320 Z" fill="#ce1126"/>
+  <path d="M340 180 H460 V260 H340 Z" fill="#ffffff"/>
+  <text x="400" y="230" font-family="Arial" font-size="20" text-anchor="middle" fill="#000000">LFB</text>
+</svg>
