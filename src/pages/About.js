@@ -26,6 +26,22 @@ const HeroSection = styled.section`
   text-align: center;
   color: white;
   position: relative;
+
+  @media (max-width: 1024px) {
+    min-height: 350px;
+    background-attachment: scroll;
+  }
+
+  @media (max-width: 768px) {
+    height: 40vh;
+    min-height: 300px;
+    padding: 2rem 0;
+  }
+
+  @media (max-width: 480px) {
+    height: 35vh;
+    min-height: 280px;
+  }
 `;
 
 const HeroContent = styled.div`
@@ -35,12 +51,27 @@ const HeroContent = styled.div`
   position: relative;
   z-index: 2;
 
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
+
   h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    
+    @media (max-width: 1024px) {
+      font-size: 2.5rem;
+    }
     
     @media (max-width: 768px) {
       font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.75rem;
     }
   }
 
@@ -48,9 +79,19 @@ const HeroContent = styled.div`
     font-size: 1.3rem;
     max-width: 600px;
     margin: 0 auto;
+    line-height: 1.5;
+    
+    @media (max-width: 1024px) {
+      font-size: 1.2rem;
+    }
     
     @media (max-width: 768px) {
       font-size: 1.1rem;
+      max-width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1rem;
     }
   }
 `;
@@ -76,6 +117,19 @@ const StorySection = styled.section`
   background-position: center;
   background-attachment: fixed;
 
+  @media (max-width: 1024px) {
+    background-attachment: scroll;
+    padding: 4rem 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 0;
+  }
+
   h2 {
     color: white;
   }
@@ -96,6 +150,19 @@ const ValuesSection = styled.section`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  @media (max-width: 1024px) {
+    background-attachment: scroll;
+    padding: 4rem 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 0;
+  }
   
   h2 {
     color: white;
@@ -122,6 +189,16 @@ const ValuesGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1rem;
+  }
 `;
 
 const ValueCard = styled.div`
