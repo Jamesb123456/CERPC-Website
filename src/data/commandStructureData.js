@@ -1,9 +1,9 @@
-// Command Structure Data Structure for CERPC
+// Structure Data Structure for CERPC
 // This data structure represents the police command hierarchy
 
 export const commandStructureData = {
   title: "Central East Roleplay Community",
-  subtitle: "Command Structure & Organization",
+  subtitle: "Structure & Organization",
   
   // Commander (Top Level)
   commander: {

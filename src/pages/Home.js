@@ -523,7 +523,7 @@ const Home = () => {
           </p>
           <HeroButtons>
             <a href="https://cerpc.uk/apply" className="btn primary" target="_blank" rel="noopener noreferrer">Join the Community</a>
-            <Link to="/command-structure" className="btn secondary">View Command Structure</Link>
+            <Link to="/command-structure" className="btn secondary">View Structure</Link>
           </HeroButtons>
         </HeroContent>
         <ScrollIndicator>
@@ -561,7 +561,7 @@ const Home = () => {
               <FaGavel className="icon" />
               <h3>Structured Operations</h3>
               <p>
-                Clear command structure, standard operating procedures, and realistic department 
+                Clear Structure, standard operating procedures, and realistic department 
                 divisions create an authentic law enforcement environment.
               </p>
             </FeatureCard>

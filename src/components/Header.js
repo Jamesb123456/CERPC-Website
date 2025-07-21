@@ -158,35 +158,19 @@ const NavLinks = styled.ul`
   }
 
   @media (max-width: 768px) {
-    position: fixed;
-    top: 0;
-    left: ${props => props.isOpen ? '0' : '-100%'};
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(
-      135deg, 
-      #0a1a2e 0%, 
-      #16213e 50%, 
-      #1557a0 100%
-    );
+    position: absolute;
+    top: ${props => props.isOpen ? '100%' : '-300px'};
+    left: 0;
+    right: 0;
+    background: rgba(10, 26, 46, 0.98);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 999;
-    gap: 1.5rem;
-    padding: 2rem;
-    backdrop-filter: blur(10px);
-    
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(circle at center, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
-    }
+    padding: 1.5rem 0;
+    transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 998;
+    gap: 0;
+    backdrop-filter: blur(15px);
+    border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   }
 `;
 
@@ -262,17 +246,22 @@ const NavLink = styled(Link)`
   }
 
   @media (max-width: 768px) {
-    font-size: 1.3rem;
-    padding: 1.2rem 2.5rem;
-    width: 280px;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    width: auto;
     text-align: center;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 215, 0, 0.2);
-    margin: 0.25rem 0;
+    background: transparent;
+    border: none;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     
     &:hover {
-      background: rgba(255, 215, 0, 0.2);
-      transform: scale(1.02);
+      background: rgba(255, 215, 0, 0.08);
+      transform: none;
+    }
+    
+    &:last-child {
+      border-bottom: none;
     }
   }
 `;
@@ -339,17 +328,22 @@ const ExternalNavLink = styled.a`
   }
 
   @media (max-width: 768px) {
-    font-size: 1.3rem;
-    padding: 1.2rem 2.5rem;
-    width: 280px;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    width: auto;
     text-align: center;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 215, 0, 0.2);
-    margin: 0.25rem 0;
+    background: transparent;
+    border: none;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     
     &:hover {
-      background: rgba(255, 215, 0, 0.2);
-      transform: scale(1.02);
+      background: rgba(255, 215, 0, 0.08);
+      transform: none;
+    }
+    
+    &:last-child {
+      border-bottom: none;
     }
   }
 `;

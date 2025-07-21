@@ -284,7 +284,7 @@ const ChartContainer = styled.div`
   }
 `;
 
-// Command Structure Image Display Component
+// Structure Image Display Component
 const CommandStructureImage = styled.img`
   width: 100%;
   height: auto;
@@ -309,9 +309,9 @@ const CommandStructure = () => {
   return (
     <CommandStructureContainer>
       <HeroContainer>
-        <HeroImage src="/assets/NLRPC_-_1224.png" alt="Central East RPC Command Structure Hero" />
+        <HeroImage src="/assets/NLRPC_-_1224.png" alt="Central East RPC Structure Hero" />
         <HeroOverlay>
-          <HeroTitle>Command Structure</HeroTitle>
+          <HeroTitle>Structure</HeroTitle>
           <HeroSubtitle>Central East RPC - Metropolitan Police Service Structure</HeroSubtitle>
         </HeroOverlay>
       </HeroContainer>
