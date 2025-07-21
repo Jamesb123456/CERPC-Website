@@ -290,7 +290,7 @@ const About = () => {
       {/* Hero Section */}
       <HeroSection>
         <HeroContent>
-          <h1>About Central East Roleplay Community</h1>
+          <h1>About Central East</h1>
           <p>Central East RPC was created by and for people who care about proper roleplay. With a focus on UK policing, we're committed to building a respectful, structured and immersive environment for everyone involved.</p>
         </HeroContent>
       </HeroSection>
