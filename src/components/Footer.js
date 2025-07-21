@@ -124,8 +124,8 @@ const Footer = () => {
         <FooterSection>
           <h3>Social Media</h3>
           <ul>
-            <li><a href="https://x.com/CentralEast_MO" target="_blank" rel="noopener noreferrer">Met Operations</a></li>
             <li><a href="https://x.com/CentralEast_FL" target="_blank" rel="noopener noreferrer">Frontline Policing</a></li>
+            <li><a href="https://x.com/CentralEast_MO" target="_blank" rel="noopener noreferrer">Met Operations</a></li>
             <li><a href="https://x.com/CentralEast_LAS" target="_blank" rel="noopener noreferrer">London Ambulance Service</a></li>
             <li><a href="https://x.com/CentralEast_LFB" target="_blank" rel="noopener noreferrer">London Fire Brigade</a></li>
           </ul>
