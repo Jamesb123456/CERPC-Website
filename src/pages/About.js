@@ -307,7 +307,7 @@ const About = () => {
               </div>
               <h3>Lucas Johnson</h3>
               <div className="position">Chief Superintendent<br />Policing Operations</div>
-              <p>I approach everything with clarity, focus, and intention, driven by a sense of purpose and rooted in honesty. I appreciate development, deep connections, and balancing creativity and reason to transform ideas into long lasting effects. I take great satisfaction in maintaining accountability, structure, and fairness while attempting to establish a nurturing, well-run atmosphere where participants can flourish. My goal is to establish enduring trust and solid groundwork for high-quality roleplay by leading with consistency and respect.</p>
+              <p>As Chief Superintendent for Policing Operations, I’m committed to building a professional, enjoyable, and immersive roleplay experience for all players. With many years of involvement in FiveM roleplay, I bring a wealth of experience, leadership, and a deep understanding of what makes a community thrive. My core focus is on player enjoyment—ensuring that every interaction, patrol, and scenario is both engaging and authentic. I take pride in supporting a team that values realism, respect, and fun, and I’m always looking for new ways to enhance our operations and create a space where everyone feels welcome and involved.</p>
             </LeaderCard>
           </LeadershipGrid>
         </Container>
