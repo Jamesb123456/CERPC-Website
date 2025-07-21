@@ -446,7 +446,7 @@ const Header = () => {
         <NavLinks isOpen={isMenuOpen}>
           <li><NavLink to="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>Home</NavLink></li>
           <li><NavLink to="/about" className={location.pathname === '/about' ? 'active' : ''} onClick={closeMenu}>About</NavLink></li>
-          <li><NavLink to="/command-structure" className={location.pathname === '/command-structure' ? 'active' : ''} onClick={closeMenu}>Command Structure</NavLink></li>
+          <li><NavLink to="/command-structure" className={location.pathname === '/command-structure' ? 'active' : ''} onClick={closeMenu}>Structure</NavLink></li>
           <li><ExternalNavLink href="https://cerpc.uk/apply" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Join Us</ExternalNavLink></li>
 
           <li><ExternalNavLink href="https://cerpc.uk/login" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Members Login</ExternalNavLink></li>
