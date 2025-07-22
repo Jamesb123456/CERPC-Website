@@ -523,7 +523,7 @@ const Home = () => {
           </p>
           <HeroButtons>
             <a href="https://cerpc.uk/apply" className="btn primary" target="_blank" rel="noopener noreferrer">Join the Community</a>
-            <Link to="/command-structure" className="btn secondary">View Structure</Link>
+            <Link to="/structure" className="btn secondary">View Structure</Link>
           </HeroButtons>
         </HeroContent>
         <ScrollIndicator>

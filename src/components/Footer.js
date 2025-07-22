@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { FaDiscord, FaTwitter, FaInstagram, FaYoutube, FaTiktok } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
@@ -108,7 +109,7 @@ const Footer = () => {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
-            <li><a href="/command-structure">Structure</a></li>
+            <li><a href="/structure">Structure</a></li>
 
           </ul>
         </FooterSection>
@@ -116,7 +117,7 @@ const Footer = () => {
         <FooterSection>
           <h3>FMS</h3>
           <ul>
-            <li><a href="https://cerpc.uk/apply" target="_blank" rel="noopener noreferrer">Join Us</a></li>
+            <li><Link to="/join-us">Join Us</Link></li>
             <li><a href="https://cerpc.uk/login" target="_blank" rel="noopener noreferrer">Member Login</a></li>
           </ul>
         </FooterSection>
