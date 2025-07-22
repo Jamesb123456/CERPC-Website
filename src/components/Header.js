@@ -439,9 +439,9 @@ const Header = () => {
         
         <NavLinks isOpen={isMenuOpen}>
           <li><NavLink to="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>Home</NavLink></li>
-          <li><NavLink to="/about" className={location.pathname === '/about' ? 'active' : ''} onClick={closeMenu}>About</NavLink></li>
-          <li><NavLink to="/structure" className={location.pathname === '/structure' ? 'active' : ''} onClick={closeMenu}>Structure</NavLink></li>
-          <li><NavLink to="/join-us" className={location.pathname === '/join-us' ? 'active' : ''} onClick={closeMenu}>Join Us</NavLink></li>
+          <li><NavLink to="/site/about" className={location.pathname === '/site/about' ? 'active' : ''} onClick={closeMenu}>About</NavLink></li>
+          <li><NavLink to="/site/structure" className={location.pathname === '/site/structure' ? 'active' : ''} onClick={closeMenu}>Structure</NavLink></li>
+          <li><NavLink to="/site/join-us" className={location.pathname === '/site/join-us' ? 'active' : ''} onClick={closeMenu}>Join Us</NavLink></li>
 
           <li><ExternalNavLink href="https://cerpc.uk/login" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Members Login</ExternalNavLink></li>
         </NavLinks>
