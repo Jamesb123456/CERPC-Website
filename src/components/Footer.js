@@ -108,8 +108,8 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/structure">Structure</a></li>
+            <li><a href="/site/about">About Us</a></li>
+            <li><a href="/site/structure">Structure</a></li>
 
           </ul>
         </FooterSection>
@@ -117,7 +117,7 @@ const Footer = () => {
         <FooterSection>
           <h3>FMS</h3>
           <ul>
-            <li><Link to="/join-us">Join Us</Link></li>
+            <li><Link to="/site/join-us">Join Us</Link></li>
             <li><a href="https://cerpc.uk/login" target="_blank" rel="noopener noreferrer">Member Login</a></li>
           </ul>
         </FooterSection>
