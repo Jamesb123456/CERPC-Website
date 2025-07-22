@@ -5,7 +5,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import CommandStructure from './pages/CommandStructure';
+import Structure from './pages/Structure';
+import JoinUs from './pages/JoinUs';
 
 import './styles/App.css';
 
@@ -27,7 +28,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/command-structure" element={<CommandStructure />} />
+          <Route path="/structure" element={<Structure />} />
+          <Route path="/join-us" element={<JoinUs />} />
 
         </Routes>
       </MainContent>
