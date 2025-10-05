@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="128" height="128" role="img" aria-label="CERPC Logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0a1a2e"/>
+      <stop offset="100%" stop-color="#1557a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="24" fill="url(#g)"/>
+  <g transform="translate(28 28)">
+    <path d="M100 0c-12 16-36 28-60 32v56c0 44 28 84 60 100 32-16 60-56 60-100V32C136 28 112 16 100 0z" fill="#FFD700" opacity="0.9"/>
+    <circle cx="100" cy="92" r="46" fill="#0a1a2e" opacity="0.95"/>
+    <text x="100" y="102" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="28" fill="#FFD700" text-anchor="middle">CERPC</text>
+  </g>
+</svg>

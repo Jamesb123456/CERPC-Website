@@ -17,20 +17,18 @@ A professional UK police-themed website for the Central East Roleplay Community 
 - **Members**: Member portal and authentication
 
 ### Design Features
-- **Authentic UK Police Theme**: Professional blue/gold color scheme
-- **Responsive Design**: Mobile-first approach with desktop enhancements
-- **Interactive Elements**: Hover effects, animations, and smooth transitions
-- **Real-time Server Status**: Live server status indicator in header
-- **Professional Typography**: Clean, readable fonts with proper hierarchy
+ - **Authentic UK Police Theme**: Professional blue/gold color scheme
+ - **Responsive Design**: Mobile-first approach with desktop enhancements
+ - **Interactive Elements**: Hover effects, animations, and smooth transitions
+ - **Professional Typography**: Clean, readable fonts with proper hierarchy
 
 ## 🛠️ Technology Stack
 
 ### Frontend
-- **React.js** (18.2.0) - Component-based UI framework
-- **React Router DOM** (6.8.0) - Client-side routing
-- **Styled Components** (5.3.6) - CSS-in-JS styling solution
-- **React Icons** (4.7.1) - Comprehensive icon library
-- **Framer Motion** (9.0.0) - Animation and transitions
+ - **React.js** (18.2.0) - Component-based UI framework
+ - **React Router DOM** (6.8.0) - Client-side routing
+ - **Styled Components** (5.3.6) - CSS-in-JS styling solution
+ - **React Icons** (4.7.1) - Comprehensive icon library
 
 ### Build Tools
 - **Create React App** (5.0.1) - Zero-configuration build setup
@@ -47,24 +45,18 @@ A professional UK police-themed website for the Central East Roleplay Community 
 ```
 src/
 ├── components/          # Reusable UI components
-│   ├── Header.js       # Navigation header with server status
-│   └── Footer.js       # Site footer
-├── pages/              # Page components
-│   ├── Home.js         # Landing page
-│   ├── About.js        # About page
-│   ├── ORBAT.js        # Organizational chart
-│   ├── Departments.js  # Department overview
-│   ├── JoinUs.js       # Recruitment page
-│   ├── Rules.js        # Rules and guidelines
-│   ├── Community.js    # Community features
-│   ├── Gallery.js      # Image gallery
-│   ├── Resources.js    # Resource downloads
-│   └── Members.js      # Member portal
-├── data/               # Static data files
-├── assets/             # Images and media
-├── styles/             # Global styles
-├── App.js              # Main application component
-└── index.js            # Application entry point
+│   ├── Header.js        # Navigation header
+│   └── Footer.js        # Site footer
+├── pages/               # Page components
+│   ├── Home.js          # Landing page
+│   ├── About.js         # About page
+│   ├── Structure.js     # Organizational chart (ORBAT)
+│   └── JoinUs.js        # Recruitment page
+├── data/                # Static data files
+├── assets/              # Images and media
+├── styles/              # Global styles
+├── App.js               # Main application component
+└── index.js             # Application entry point
 ```
 
 ## 🚀 Getting Started
@@ -128,10 +120,10 @@ src/
 - Professional connector lines between levels
 
 ### Header Navigation
-- Fixed header with gradient background
-- Real-time server status indicator
-- Mobile hamburger menu
-- Smooth transitions and animations
+ - Fixed header with gradient background
+ - External members login link
+ - Mobile hamburger menu
+ - Smooth transitions and animations
 
 ### Content Management
 - All content is easily editable through component files
@@ -150,6 +142,15 @@ src/
 1. Create new component in `src/pages/`
 2. Add route in `src/App.js`
 3. Update navigation in `src/components/Header.js`
+
+## 🗺️ Roadmap
+
+- **Departments**: Specialized units overview
+- **Rules & Guidelines**: Community rules and standards
+- **Community**: Social and Discord integrations
+- **Gallery**: Image gallery and media
+- **Resources**: Training materials and downloads
+- **Members**: Member portal and authentication
 
 ## 🚀 Deployment
 
@@ -190,29 +191,28 @@ npm run build
 
 ## 🎯 Performance Optimizations
 
-- Code splitting for faster loading
-- Image optimization (WebP format with fallbacks)
-- Lazy loading for images
-- Gzip compression
-- CDN delivery through Netlify
-
 ## 📞 Support & Community
-
-- **Discord**: Join our community server for support
-- **Issues**: Report bugs and feature requests via GitHub issues
-- **Documentation**: Comprehensive docs in `/docs` folder
+ - **Discord**: https://discord.gg/YkBj8hMfqz
+ - **Issues**: Report bugs and feature requests via GitHub issues
+ - **Documentation**: Comprehensive docs in `/docs` folder
 
 ## 📄 License
+This project is licensed under the MIT License — see the [`LICENSE`](LICENSE) file for details.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🤝 Contributing
+We welcome contributions! Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines on branching, commits, and pull requests.
+
+## 🧭 Code of Conduct
+By participating in this project, you agree to abide by our [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
+
+## 🔐 Security
+Please review [`SECURITY.md`](SECURITY.md) for how to report vulnerabilities. Use GitHub's private vulnerability reporting rather than public issues.
+
+## 🧪 Continuous Integration
+All pull requests are automatically built via GitHub Actions ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)). Ensure `npm run build` passes locally before opening a PR.
 
 ## 🙏 Acknowledgments
-
 - UK Metropolitan Police for authentic rank structure inspiration
 - FiveM community for roleplay standards
 - React.js team for the excellent framework
 - All community members who contributed to the project
-
----
-
-**Central East Roleplay Community** - Professional UK Police Roleplay Experience

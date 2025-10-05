@@ -421,11 +421,11 @@ const Header = () => {
         <Logo>
           <LogoIcon>
             <img 
-              src="/assets/logo.png" 
+              src="/assets/logo.svg" 
               alt="CERPC Police Badge" 
               className="logo-img"
               onError={(e) => {
-                console.error('Logo failed to load: /assets/logo.png');
+                console.error('Logo failed to load: /assets/logo.svg');
                 e.target.style.display = 'none';
               }}
             />
