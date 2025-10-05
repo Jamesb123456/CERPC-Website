@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import logoImage from '../assets/logo.png';
 
 // Hero Image Container
 const HeroContainer = styled.div`

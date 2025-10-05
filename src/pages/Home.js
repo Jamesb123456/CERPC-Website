@@ -14,7 +14,7 @@ const HeroSection = styled.section`
   background: linear-gradient(
     rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.7)
-  ), url('/assets/hero-bg-1.png');
+  ), url('/images/gallery/placeholder-1.svg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -223,7 +223,7 @@ const AboutSection = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/assets/hero-bg-2.png');
+    background: url('/images/gallery/placeholder-2.svg');
     background-size: cover;
     background-position: center;
     opacity: 0.03;
@@ -523,7 +523,7 @@ const Home = () => {
           </p>
           <HeroButtons>
             <a href="https://cerpc.uk/apply" className="btn primary" target="_blank" rel="noopener noreferrer">Join the Community</a>
-            <Link to="/structure" className="btn secondary">View Structure</Link>
+            <Link to="/site/structure" className="btn secondary">View Structure</Link>
           </HeroButtons>
         </HeroContent>
         <ScrollIndicator>
