@@ -14,7 +14,7 @@ const HeroSection = styled.section`
   background: linear-gradient(
     rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.7)
-  ), url('/images/gallery/placeholder-1.svg');
+  ), url('/assets/hero-bg-1.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -223,7 +223,7 @@ const AboutSection = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/images/gallery/placeholder-2.svg');
+    background: url('/assets/hero-bg-2.png');
     background-size: cover;
     background-position: center;
     opacity: 0.03;
