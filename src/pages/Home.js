@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { FaUsers, FaShieldAlt, FaGavel, FaServer, FaClock, FaAward, FaPlay, FaChevronDown } from 'react-icons/fa';
+import { FaUsers, FaShieldAlt, FaGavel, FaChevronDown } from 'react-icons/fa';
 
 const HomeContainer = styled.div`
   min-height: 100vh;

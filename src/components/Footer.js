@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { FaDiscord, FaTwitter, FaInstagram, FaYoutube, FaTiktok } from 'react-icons/fa';
+import { FaDiscord, FaTwitter, FaYoutube, FaTiktok } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
   background: var(--background-secondary);

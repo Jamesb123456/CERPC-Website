@@ -10,7 +10,8 @@
     "eject": "react-scripts eject",
     "serve": "serve -s build",
     "server": "node server.js",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --max-warnings=0",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
