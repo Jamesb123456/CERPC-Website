@@ -1,5 +1,8 @@
 # Central East Roleplay Community Website
 
+[![CI](https://github.com/Jamesb123456/CERPC-Website/actions/workflows/ci.yml/badge.svg)](https://github.com/Jamesb123456/CERPC-Website/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/Jamesb123456/CERPC-Website/actions/workflows/codeql.yml/badge.svg)](https://github.com/Jamesb123456/CERPC-Website/actions/workflows/codeql.yml)
+
 A professional UK police-themed website for the Central East Roleplay Community (CERPC) FiveM server, featuring authentic Metropolitan Police styling and comprehensive community features.
 
 ## 🚀 Features
