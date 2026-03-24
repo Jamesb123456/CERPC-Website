@@ -87,18 +87,41 @@ const Footer = () => {
       <FooterContent>
         <FooterSection>
           <h3>Central East Roleplay Community</h3>
-          <p>Realistic UK roleplay made for players who take it seriously. Whether you're new or experienced, you'll find a focused, supportive environment here.</p>
+          <p>
+            Realistic UK roleplay made for players who take it seriously. Whether you&apos;re new or
+            experienced, you&apos;ll find a focused, supportive environment here.
+          </p>
           <SocialLinks>
-            <SocialIcon href="https://discord.gg/YkBj8hMfqz" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+            <SocialIcon
+              href="https://discord.gg/YkBj8hMfqz"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Discord"
+            >
               <FaDiscord />
             </SocialIcon>
-            <SocialIcon href="https://x.com/CentralEast_RPC" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <SocialIcon
+              href="https://x.com/CentralEast_RPC"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
               <FaTwitter />
             </SocialIcon>
-            <SocialIcon href="https://www.tiktok.com/@centraleast_rpc?lang=en" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <SocialIcon
+              href="https://www.tiktok.com/@centraleast_rpc?lang=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+            >
               <FaTiktok />
             </SocialIcon>
-            <SocialIcon href="https://www.youtube.com/@CentralEast_RPC" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <SocialIcon
+              href="https://www.youtube.com/@CentralEast_RPC"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
               <FaYoutube />
             </SocialIcon>
           </SocialLinks>
@@ -107,31 +130,57 @@ const Footer = () => {
         <FooterSection>
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/site/about">About Us</a></li>
-            <li><a href="/site/structure">Structure</a></li>
-
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/site/about">About Us</a>
+            </li>
+            <li>
+              <a href="/site/structure">Structure</a>
+            </li>
           </ul>
         </FooterSection>
 
         <FooterSection>
           <h3>FMS</h3>
           <ul>
-            <li><Link to="/site/join-us">Join Us</Link></li>
-            <li><a href="https://cerpc.uk/login" target="_blank" rel="noopener noreferrer">Member Login</a></li>
+            <li>
+              <Link to="/site/join-us">Join Us</Link>
+            </li>
+            <li>
+              <a href="https://cerpc.uk/login" target="_blank" rel="noopener noreferrer">
+                Member Login
+              </a>
+            </li>
           </ul>
         </FooterSection>
 
         <FooterSection>
           <h3>Social Media</h3>
           <ul>
-            <li><a href="https://x.com/CentralEast_FL" target="_blank" rel="noopener noreferrer">Frontline Policing</a></li>
-            <li><a href="https://x.com/CentralEast_MO" target="_blank" rel="noopener noreferrer">Met Operations</a></li>
-            <li><a href="https://x.com/CentralEast_LAS" target="_blank" rel="noopener noreferrer">London Ambulance Service</a></li>
-            <li><a href="https://x.com/CentralEast_LFB" target="_blank" rel="noopener noreferrer">London Fire Brigade</a></li>
+            <li>
+              <a href="https://x.com/CentralEast_FL" target="_blank" rel="noopener noreferrer">
+                Frontline Policing
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/CentralEast_MO" target="_blank" rel="noopener noreferrer">
+                Met Operations
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/CentralEast_LAS" target="_blank" rel="noopener noreferrer">
+                London Ambulance Service
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/CentralEast_LFB" target="_blank" rel="noopener noreferrer">
+                London Fire Brigade
+              </a>
+            </li>
           </ul>
         </FooterSection>
-
       </FooterContent>
 
       <FooterBottom>

@@ -16,12 +16,10 @@ const HeaderContainer = styled.header`
   top: 0;
   z-index: 1000;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  border-bottom: 3px solid #FFD700;
+  border-bottom: 3px solid #ffd700;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  
 
-  
   &::after {
     content: '';
     position: absolute;
@@ -29,7 +27,7 @@ const HeaderContainer = styled.header`
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, #FFD700, transparent);
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
   }
 `;
 
@@ -42,11 +40,11 @@ const Nav = styled.nav`
   padding: 1.25rem 2rem;
   position: relative;
   min-height: 80px;
-  
+
   @media (max-width: 1024px) {
     padding: 1rem 1.5rem;
   }
-  
+
   @media (max-width: 768px) {
     padding: 1rem;
     min-height: 70px;
@@ -61,7 +59,7 @@ const Logo = styled.div`
   position: absolute;
   left: 2rem;
   z-index: 2;
-  
+
   @media (max-width: 768px) {
     position: relative;
     left: auto;
@@ -76,11 +74,11 @@ const LogoIcon = styled.div`
   justify-content: center;
   transition: all 0.3s ease;
   position: relative;
-  
+
   &:hover {
     transform: scale(1.05);
   }
-  
+
   .logo-img {
     width: 100%;
     height: 100%;
@@ -88,11 +86,11 @@ const LogoIcon = styled.div`
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
     transition: filter 0.3s ease;
   }
-  
+
   &:hover .logo-img {
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
   }
-  
+
   @media (max-width: 768px) {
     width: 55px;
     height: 55px;
@@ -105,16 +103,17 @@ const LogoText = styled.div`
     font-weight: 900;
     color: white;
     margin: 0;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6),
-                 0 0 20px rgba(255, 215, 0, 0.2);
+    text-shadow:
+      3px 3px 6px rgba(0, 0, 0, 0.6),
+      0 0 20px rgba(255, 215, 0, 0.2);
     letter-spacing: -0.8px;
     font-family: 'Arial Black', Arial, sans-serif;
     line-height: 1;
   }
-  
+
   .subtitle {
     font-size: 0.8rem;
-    color: #FFD700;
+    color: #ffd700;
     margin: 0;
     margin-top: 2px;
     text-transform: uppercase;
@@ -123,13 +122,13 @@ const LogoText = styled.div`
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     opacity: 0.95;
   }
-  
+
   @media (max-width: 768px) {
     .title {
       font-size: 1.6rem;
       letter-spacing: -0.5px;
     }
-    
+
     .subtitle {
       font-size: 0.7rem;
       letter-spacing: 2px;
@@ -159,7 +158,7 @@ const NavLinks = styled.ul`
 
   @media (max-width: 768px) {
     position: absolute;
-    top: ${props => props.isOpen ? '100%' : '-300px'};
+    top: ${(props) => (props.isOpen ? '100%' : '-300px')};
     left: 0;
     right: 0;
     background: rgba(10, 26, 46, 0.98);
@@ -196,11 +195,11 @@ const NavLink = styled(Link)`
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #FFD700, #FFA500);
+    background: linear-gradient(90deg, #ffd700, #ffa500);
     transition: width 0.3s ease;
     border-radius: 1px;
   }
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -219,24 +218,24 @@ const NavLink = styled(Link)`
     background: rgba(255, 255, 255, 0.12);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    
+
     &::before {
       width: 80%;
     }
-    
+
     &::after {
       opacity: 1;
     }
   }
 
   &.active {
-    color: #FFD700;
+    color: #ffd700;
     background: rgba(255, 215, 0, 0.15);
     font-weight: 700;
-    
+
     &::before {
       width: 90%;
-      background: linear-gradient(90deg, #FFD700, #FFED4E);
+      background: linear-gradient(90deg, #ffd700, #ffed4e);
     }
   }
 
@@ -254,12 +253,12 @@ const NavLink = styled(Link)`
     border: none;
     margin: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    
+
     &:hover {
       background: rgba(255, 215, 0, 0.08);
       transform: none;
     }
-    
+
     &:last-child {
       border-bottom: none;
     }
@@ -289,11 +288,11 @@ const ExternalNavLink = styled.a`
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #FFD700, #FFA500);
+    background: linear-gradient(90deg, #ffd700, #ffa500);
     transition: width 0.3s ease;
     border-radius: 1px;
   }
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -312,11 +311,11 @@ const ExternalNavLink = styled.a`
     background: rgba(255, 255, 255, 0.12);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    
+
     &::before {
       width: 80%;
     }
-    
+
     &::after {
       opacity: 1;
     }
@@ -336,19 +335,17 @@ const ExternalNavLink = styled.a`
     border: none;
     margin: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    
+
     &:hover {
       background: rgba(255, 215, 0, 0.08);
       transform: none;
     }
-    
+
     &:last-child {
       border-bottom: none;
     }
   }
 `;
-
-
 
 const MobileMenuToggle = styled.button`
   display: none;
@@ -364,7 +361,7 @@ const MobileMenuToggle = styled.button`
   backdrop-filter: blur(15px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   position: relative;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -380,15 +377,15 @@ const MobileMenuToggle = styled.button`
 
   &:hover {
     background: rgba(255, 215, 0, 0.2);
-    border-color: #FFD700;
+    border-color: #ffd700;
     transform: scale(1.08);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-    
+
     &::before {
       opacity: 1;
     }
   }
-  
+
   &:active {
     transform: scale(0.95);
   }
@@ -420,33 +417,71 @@ const Header = () => {
       <Nav>
         <Logo>
           <LogoIcon>
-            <img 
-              src="/assets/logo.svg" 
-              alt="CERPC Police Badge" 
+            <img
+              src="/assets/logo.svg"
+              alt="CERPC Police Badge"
               className="logo-img"
               onError={(e) => {
                 console.error('Logo failed to load: /assets/logo.svg');
                 e.target.style.display = 'none';
               }}
             />
-
           </LogoIcon>
           <LogoText>
             <div className="title">CERPC</div>
             <div className="subtitle">FiveM RPC</div>
           </LogoText>
         </Logo>
-        
+
         <NavLinks isOpen={isMenuOpen}>
-          <li><NavLink to="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>Home</NavLink></li>
-          <li><NavLink to="/site/about" className={location.pathname === '/site/about' ? 'active' : ''} onClick={closeMenu}>About</NavLink></li>
-          <li><NavLink to="/site/structure" className={location.pathname === '/site/structure' ? 'active' : ''} onClick={closeMenu}>Structure</NavLink></li>
-          <li><NavLink to="/site/join-us" className={location.pathname === '/site/join-us' ? 'active' : ''} onClick={closeMenu}>Join Us</NavLink></li>
+          <li>
+            <NavLink
+              to="/"
+              className={location.pathname === '/' ? 'active' : ''}
+              onClick={closeMenu}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/site/about"
+              className={location.pathname === '/site/about' ? 'active' : ''}
+              onClick={closeMenu}
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/site/structure"
+              className={location.pathname === '/site/structure' ? 'active' : ''}
+              onClick={closeMenu}
+            >
+              Structure
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/site/join-us"
+              className={location.pathname === '/site/join-us' ? 'active' : ''}
+              onClick={closeMenu}
+            >
+              Join Us
+            </NavLink>
+          </li>
 
-          <li><ExternalNavLink href="https://cerpc.uk/login" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Members Login</ExternalNavLink></li>
+          <li>
+            <ExternalNavLink
+              href="https://cerpc.uk/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+            >
+              Members Login
+            </ExternalNavLink>
+          </li>
         </NavLinks>
-
-
 
         <MobileMenuToggle onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes /> : <FaBars />}

@@ -13,10 +13,7 @@ const AboutContainer = styled.div`
 const HeroSection = styled.section`
   height: 50vh;
   min-height: 400px;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-  ), url('/assets/hero5.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/hero5.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -60,11 +57,11 @@ const HeroContent = styled.div`
     margin-bottom: 1rem;
     font-weight: 700;
     line-height: 1.2;
-    
+
     @media (max-width: 1024px) {
       font-size: 2.5rem;
     }
-    
+
     @media (max-width: 768px) {
       font-size: 2rem;
       margin-bottom: 0.75rem;
@@ -80,11 +77,11 @@ const HeroContent = styled.div`
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.5;
-    
+
     @media (max-width: 1024px) {
       font-size: 1.2rem;
     }
-    
+
     @media (max-width: 768px) {
       font-size: 1.1rem;
       max-width: 100%;
@@ -97,9 +94,9 @@ const HeroContent = styled.div`
 `;
 
 // Regular section
-const Section = styled.section`
+const _Section = styled.section`
   padding: 4rem 0;
-  
+
   &:nth-child(even) {
     background: var(--background-secondary);
   }
@@ -109,10 +106,7 @@ const Section = styled.section`
 const StorySection = styled.section`
   padding: 6rem 0;
   position: relative;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0.75)
-  ), url('/assets/5.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/assets/5.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -133,7 +127,7 @@ const StorySection = styled.section`
   h2 {
     color: white;
   }
-  
+
   p {
     color: rgba(255, 255, 255, 0.9);
   }
@@ -143,10 +137,7 @@ const StorySection = styled.section`
 const ValuesSection = styled.section`
   padding: 6rem 0;
   position: relative;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0.75)
-  ), url('/assets/6.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/assets/6.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -163,13 +154,13 @@ const ValuesSection = styled.section`
   @media (max-width: 480px) {
     padding: 2rem 0;
   }
-  
+
   h2 {
     color: white;
   }
 `;
 
-// Leadership section 
+// Leadership section
 const LeadershipSection = styled.section`
   padding: 6rem 0;
   position: relative;
@@ -291,10 +282,14 @@ const About = () => {
       <HeroSection>
         <HeroContent>
           <h1>About Central East</h1>
-          <p>Central East RPC was created by and for people who care about proper roleplay. With a focus on UK policing, we're committed to building a respectful, structured and immersive environment for everyone involved.</p>
+          <p>
+            Central East RPC was created by and for people who care about proper roleplay. With a
+            focus on UK policing, we&apos;re committed to building a respectful, structured and
+            immersive environment for everyone involved.
+          </p>
         </HeroContent>
       </HeroSection>
-      
+
       {/* Simple divider between sections */}
       <Divider />
 
@@ -304,24 +299,39 @@ const About = () => {
           <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Our Story</h2>
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-              Central East RPC is a whitelisted FiveM roleplay server founded in 2024 by Robert Gray, Joe Finan and Joshua Taylor. Set in the heart of the Central East borough of London, our community is built for those who value realism, enjoyment and a well-structured approach to roleplay.
+              Central East RPC is a whitelisted FiveM roleplay server founded in 2024 by Robert
+              Gray, Joe Finan and Joshua Taylor. Set in the heart of the Central East borough of
+              London, our community is built for those who value realism, enjoyment and a
+              well-structured approach to roleplay.
             </p>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-              We originally launched using the GTA V map, but after taking on board feedback from our community, we made the switch to the GTA IV map. The new setting offers a grittier, more authentic urban feel, much more in keeping with the London-inspired environment we are aiming to create. It is just one example of how we listen to our members and continue to improve the experience.
+              We originally launched using the GTA V map, but after taking on board feedback from
+              our community, we made the switch to the GTA IV map. The new setting offers a
+              grittier, more authentic urban feel, much more in keeping with the London-inspired
+              environment we are aiming to create. It is just one example of how we listen to our
+              members and continue to improve the experience.
             </p>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-              Our server features fully operational emergency services including the Metropolitan Police Service, London Ambulance Service and London Fire Brigade - all operating under authentic structures and procedures. Each department is staffed by dedicated members who understand their roles and take pride in maintaining high standards.
+              Our server features fully operational emergency services including the Metropolitan
+              Police Service, London Ambulance Service and London Fire Brigade - all operating under
+              authentic structures and procedures. Each department is staffed by dedicated members
+              who understand their roles and take pride in maintaining high standards.
             </p>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-              We pride ourselves on being a community led server. That means listening, adapting and holding ourselves to high standards both in and out of roleplay. Respect, professionalism and authenticity are not just buzzwords here, they are the foundation of how we operate.
+              We pride ourselves on being a community led server. That means listening, adapting and
+              holding ourselves to high standards both in and out of roleplay. Respect,
+              professionalism and authenticity are not just buzzwords here, they are the foundation
+              of how we operate.
             </p>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-              No matter your reason for joining, whether to progress, take part or simply experience a supportive environment, Central East RPC stands for serious roleplay backed by a committed community.
+              No matter your reason for joining, whether to progress, take part or simply experience
+              a supportive environment, Central East RPC stands for serious roleplay backed by a
+              committed community.
             </p>
           </div>
         </Container>
       </StorySection>
-      
+
       {/* Simple divider between sections */}
       <Divider />
 
@@ -333,58 +343,119 @@ const About = () => {
             <ValueCard>
               <FaShieldAlt className="icon" />
               <h3>Professional Standards</h3>
-              <p>We expect all members to conduct themselves properly, whether in character or out. Respect, realism and accountability are core to how we operate.</p>
+              <p>
+                We expect all members to conduct themselves properly, whether in character or out.
+                Respect, realism and accountability are core to how we operate.
+              </p>
             </ValueCard>
             <ValueCard>
               <FaUsers className="icon" />
               <h3>Experienced Community</h3>
-              <p>Our members bring real knowledge of UK policing and emergency services, helping to create believable, well-run scenarios across all departments.</p>
+              <p>
+                Our members bring real knowledge of UK policing and emergency services, helping to
+                create believable, well-run scenarios across all departments.
+              </p>
             </ValueCard>
             <ValueCard>
               <FaGavel className="icon" />
               <h3>Structured Operations</h3>
-              <p>Every role has purpose and direction. Our departments follow organised procedures, rank systems and clear expectations to keep RP smooth and focused.</p>
+              <p>
+                Every role has purpose and direction. Our departments follow organised procedures,
+                rank systems and clear expectations to keep RP smooth and focused.
+              </p>
             </ValueCard>
             <ValueCard>
               <FaHandshake className="icon" />
               <h3>Adaptability</h3>
-              <p>We listen, we adjust and we move forward. From map changes to organisational updates, we improve based on what the community needs.</p>
+              <p>
+                We listen, we adjust and we move forward. From map changes to organisational
+                updates, we improve based on what the community needs.
+              </p>
             </ValueCard>
           </ValuesGrid>
         </Container>
       </ValuesSection>
-      
+
       {/* Simple divider between sections */}
       <Divider />
 
       {/* Leadership Section */}
       <LeadershipSection>
         <Container>
-          <h2 style={{ textAlign: 'center', color: 'var(--text-primary)', marginBottom: '2rem' }}>Leadership Team</h2>
+          <h2 style={{ textAlign: 'center', color: 'var(--text-primary)', marginBottom: '2rem' }}>
+            Leadership Team
+          </h2>
           <LeadershipGrid>
             <LeaderCard>
               <div className="avatar" style={{ overflow: 'hidden', background: 'none' }}>
-                <img src="/assets/JoefInian.png" alt="Joe Finan" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img
+                  src="/assets/JoefInian.png"
+                  alt="Joe Finan"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
               </div>
               <h3>Joe Finan</h3>
-              <div className="position">Chief Superintendent<br />Community Operations</div>
-              <p>Motivated by a sense of purpose and based on honesty, I try to infuse everything I do with intention, clarity, and focus. I firmly think that meaningful connections and ongoing development can transform ideas into tangible, long-lasting effects by fusing innovative thinking with logical application. I'm dedicated to adding value that extends beyond the task at hand, and I have a strong work ethic and a sincere passion for advancement.</p>
+              <div className="position">
+                Chief Superintendent
+                <br />
+                Community Operations
+              </div>
+              <p>
+                Motivated by a sense of purpose and based on honesty, I try to infuse everything I
+                do with intention, clarity, and focus. I firmly think that meaningful connections
+                and ongoing development can transform ideas into tangible, long-lasting effects by
+                fusing innovative thinking with logical application. I&apos;m dedicated to adding
+                value that extends beyond the task at hand, and I have a strong work ethic and a
+                sincere passion for advancement.
+              </p>
             </LeaderCard>
             <LeaderCard>
               <div className="avatar" style={{ overflow: 'hidden', background: 'none' }}>
-                <img src="/assets/gray.png" alt="Commander - Community Oversight" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img
+                  src="/assets/gray.png"
+                  alt="Commander - Community Oversight"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
               </div>
               <h3>Robert Gray</h3>
-              <div className="position">Commander<br />Community Oversight</div>
-              <p>I take pride in upholding fairness, structure and accountability within the community. With a focus on oversight and consistency, I work to ensure that all members have a clear, supportive and well managed environment to grow in. I believe in leading by example, promoting mutual respect, and making decisions that serve the long term stability of the server. My aim is to maintain a strong foundation where quality roleplay and community trust go hand in hand.</p>
+              <div className="position">
+                Commander
+                <br />
+                Community Oversight
+              </div>
+              <p>
+                I take pride in upholding fairness, structure and accountability within the
+                community. With a focus on oversight and consistency, I work to ensure that all
+                members have a clear, supportive and well managed environment to grow in. I believe
+                in leading by example, promoting mutual respect, and making decisions that serve the
+                long term stability of the server. My aim is to maintain a strong foundation where
+                quality roleplay and community trust go hand in hand.
+              </p>
             </LeaderCard>
             <LeaderCard>
               <div className="avatar" style={{ overflow: 'hidden', background: 'none' }}>
-                <img src="/assets/lucas.png" alt="Lucas Johnson" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img
+                  src="/assets/lucas.png"
+                  alt="Lucas Johnson"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
               </div>
               <h3>Lucas Johnson</h3>
-              <div className="position">Chief Superintendent<br />Policing Operations</div>
-              <p>As Chief Superintendent for Policing Operations, I’m committed to building a professional, enjoyable, and immersive roleplay experience for all players. With many years of involvement in FiveM roleplay, I bring a wealth of experience, leadership, and a deep understanding of what makes a community thrive. My core focus is on player enjoyment—ensuring that every interaction, patrol, and scenario is both engaging and authentic. I take pride in supporting a team that values realism, respect, and fun, and I’m always looking for new ways to enhance our operations and create a space where everyone feels welcome and involved.</p>
+              <div className="position">
+                Chief Superintendent
+                <br />
+                Policing Operations
+              </div>
+              <p>
+                As Chief Superintendent for Policing Operations, I’m committed to building a
+                professional, enjoyable, and immersive roleplay experience for all players. With
+                many years of involvement in FiveM roleplay, I bring a wealth of experience,
+                leadership, and a deep understanding of what makes a community thrive. My core focus
+                is on player enjoyment—ensuring that every interaction, patrol, and scenario is both
+                engaging and authentic. I take pride in supporting a team that values realism,
+                respect, and fun, and I’m always looking for new ways to enhance our operations and
+                create a space where everyone feels welcome and involved.
+              </p>
             </LeaderCard>
           </LeadershipGrid>
         </Container>

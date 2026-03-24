@@ -30,7 +30,6 @@ function App() {
           <Route path="/site/about" element={<About />} />
           <Route path="/site/structure" element={<Structure />} />
           <Route path="/site/join-us" element={<JoinUs />} />
-
         </Routes>
       </MainContent>
       <Footer />

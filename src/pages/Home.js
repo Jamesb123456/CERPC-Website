@@ -11,10 +11,7 @@ const HomeContainer = styled.div`
 // Main Hero Section with parallax effect
 const HeroSection = styled.section`
   height: 100vh;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.7)
-  ), url('/assets/hero-bg-1.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/assets/hero-bg-1.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -33,11 +30,7 @@ const HeroSection = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-      45deg,
-      rgba(21, 87, 153, 0.1) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    );
+    background: linear-gradient(45deg, rgba(21, 87, 153, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);
     z-index: 1;
   }
 `;
@@ -52,12 +45,12 @@ const HeroContent = styled.div`
   .badge {
     display: inline-block;
     background: rgba(255, 215, 0, 0.2);
-    border: 2px solid #FFD700;
+    border: 2px solid #ffd700;
     padding: 0.5rem 1.5rem;
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #FFD700;
+    color: #ffd700;
     margin-bottom: 2rem;
     backdrop-filter: blur(10px);
     text-transform: uppercase;
@@ -78,7 +71,7 @@ const HeroContent = styled.div`
     }
 
     .highlight {
-      color: #FFD700;
+      color: #ffd700;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     }
   }
@@ -115,7 +108,7 @@ const HeroButtons = styled.div`
     overflow: hidden;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    
+
     &::before {
       content: '';
       position: absolute;
@@ -123,37 +116,32 @@ const HeroButtons = styled.div`
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.2),
-        transparent
-      );
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
       transition: left 0.5s;
     }
-    
+
     &:hover::before {
       left: 100%;
     }
-    
+
     &.primary {
       background: linear-gradient(135deg, #1557a0 0%, #0f4080 100%);
       color: white;
       border: 2px solid #1557a0;
       box-shadow: 0 4px 15px rgba(21, 87, 160, 0.3);
-      
+
       &:hover {
         transform: translateY(-3px);
         box-shadow: 0 6px 20px rgba(21, 87, 160, 0.4);
       }
     }
-    
+
     &.secondary {
       background: transparent;
       color: white;
       border: 2px solid rgba(255, 255, 255, 0.8);
       backdrop-filter: blur(10px);
-      
+
       &:hover {
         background: rgba(255, 255, 255, 0.1);
         transform: translateY(-3px);
@@ -177,7 +165,7 @@ const ScrollIndicator = styled.div`
   z-index: 2;
 
   &:hover {
-    color: #FFD700;
+    color: #ffd700;
     transform: translateX(-50%) translateY(-5px);
   }
 
@@ -194,7 +182,11 @@ const ScrollIndicator = styled.div`
   }
 
   @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
       transform: translateY(0);
     }
     40% {
@@ -245,7 +237,7 @@ const AboutContainer = styled.div`
     color: var(--text-primary);
     margin-bottom: 2rem;
     position: relative;
-    
+
     &::after {
       content: '';
       position: absolute;
@@ -254,7 +246,7 @@ const AboutContainer = styled.div`
       transform: translateX(-50%);
       width: 80px;
       height: 4px;
-      background: linear-gradient(90deg, #1557a0, #FFD700);
+      background: linear-gradient(90deg, #1557a0, #ffd700);
       border-radius: 2px;
     }
   }
@@ -294,7 +286,7 @@ const FeatureCard = styled.div`
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #1557a0, #FFD700);
+    background: linear-gradient(90deg, #1557a0, #ffd700);
   }
 
   &:hover {
@@ -323,18 +315,18 @@ const FeatureCard = styled.div`
 `;
 
 // Community Activity/Stats Section
-const StatsSection = styled.section`
+const _StatsSection = styled.section`
   padding: 4rem 0;
   background: var(--background-secondary);
   border-bottom: 1px solid var(--border-color);
 `;
 
-const StatsContainer = styled.div`
+const _StatsContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
   text-align: center;
-  
+
   h2 {
     color: var(--text-primary);
     margin-bottom: 3rem;
@@ -343,14 +335,14 @@ const StatsContainer = styled.div`
   }
 `;
 
-const StatsGrid = styled.div`
+const _StatsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 `;
 
-const StatCard = styled.div`
+const _StatCard = styled.div`
   background: var(--background-primary);
   padding: 2rem;
   border-radius: 8px;
@@ -376,25 +368,25 @@ const StatCard = styled.div`
 `;
 
 // Why Choose Us Section
-const WhyChooseSection = styled.section`
+const _WhyChooseSection = styled.section`
   padding: 4rem 0;
   background: var(--background-primary);
   border-bottom: 1px solid var(--border-color);
 `;
 
-const WhyChooseContainer = styled.div`
+const _WhyChooseContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
   text-align: center;
-  
+
   h2 {
     color: var(--text-primary);
     margin-bottom: 1rem;
     font-size: 2.5rem;
     font-weight: 700;
   }
-  
+
   .subtitle {
     color: var(--text-secondary);
     font-size: 1.2rem;
@@ -403,14 +395,14 @@ const WhyChooseContainer = styled.div`
   }
 `;
 
-const WhyChooseGrid = styled.div`
+const _WhyChooseGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 `;
 
-const WhyChooseCard = styled.div`
+const _WhyChooseCard = styled.div`
   background: var(--background-secondary);
   padding: 2rem;
   border-radius: 8px;
@@ -437,25 +429,25 @@ const WhyChooseCard = styled.div`
 `;
 
 // Application Process Section
-const ApplicationSection = styled.section`
+const _ApplicationSection = styled.section`
   padding: 4rem 0;
   background: var(--background-secondary);
   border-bottom: 1px solid var(--border-color);
 `;
 
-const ApplicationContainer = styled.div`
+const _ApplicationContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
   text-align: center;
-  
+
   h2 {
     color: var(--text-primary);
     margin-bottom: 1rem;
     font-size: 2.5rem;
     font-weight: 700;
   }
-  
+
   .subtitle {
     color: var(--text-secondary);
     font-size: 1.2rem;
@@ -464,14 +456,14 @@ const ApplicationContainer = styled.div`
   }
 `;
 
-const ApplicationSteps = styled.div`
+const _ApplicationSteps = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 `;
 
-const ApplicationStep = styled.div`
+const _ApplicationStep = styled.div`
   background: var(--background-primary);
   padding: 2rem;
   border-radius: 8px;
@@ -519,11 +511,21 @@ const Home = () => {
             Central East <span className="highlight">RPC</span>
           </h1>
           <p className="tagline">
-            Bringing together realism, structure and a proper community led approach to UK policing and emergency services roleplay.
+            Bringing together realism, structure and a proper community led approach to UK policing
+            and emergency services roleplay.
           </p>
           <HeroButtons>
-            <a href="https://cerpc.uk/apply" className="btn primary" target="_blank" rel="noopener noreferrer">Join the Community</a>
-            <Link to="/site/structure" className="btn secondary">View Structure</Link>
+            <a
+              href="https://cerpc.uk/apply"
+              className="btn primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join the Community
+            </a>
+            <Link to="/site/structure" className="btn secondary">
+              View Structure
+            </Link>
           </HeroButtons>
         </HeroContent>
         <ScrollIndicator>
@@ -536,24 +538,25 @@ const Home = () => {
         <AboutContainer>
           <h2>About CERPC</h2>
           <p className="subtitle">
-            We are a dedicated community of roleplay enthusiasts committed to delivering 
-            the most authentic UK police experience in FiveM. Our focus is on professionalism, 
-            realism, and creating meaningful interactions within our virtual community.
+            We are a dedicated community of roleplay enthusiasts committed to delivering the most
+            authentic UK police experience in FiveM. Our focus is on professionalism, realism, and
+            creating meaningful interactions within our virtual community.
           </p>
           <FeatureGrid>
             <FeatureCard>
               <FaShieldAlt className="icon" />
               <h3>Professional Standards</h3>
               <p>
-                We maintain the highest standards of professionalism, following authentic UK police procedures, 
-                protocols, and conduct expectations in all our operations and interactions.
+                We maintain the highest standards of professionalism, following authentic UK police
+                procedures, protocols, and conduct expectations in all our operations and
+                interactions.
               </p>
             </FeatureCard>
             <FeatureCard>
               <FaUsers className="icon" />
               <h3>Experienced Community</h3>
               <p>
-                Our community consists of dedicated members with extensive knowledge of UK policing, 
+                Our community consists of dedicated members with extensive knowledge of UK policing,
                 ensuring realistic and immersive roleplay experiences for all participants.
               </p>
             </FeatureCard>
@@ -561,8 +564,8 @@ const Home = () => {
               <FaGavel className="icon" />
               <h3>Structured Operations</h3>
               <p>
-                Clear Structure, standard operating procedures, and realistic department 
-                divisions create an authentic law enforcement environment.
+                Clear Structure, standard operating procedures, and realistic department divisions
+                create an authentic law enforcement environment.
               </p>
             </FeatureCard>
           </FeatureGrid>

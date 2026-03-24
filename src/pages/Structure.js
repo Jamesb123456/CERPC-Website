@@ -56,7 +56,7 @@ const CommandStructureContainer = styled.div`
   background-attachment: fixed;
   position: relative;
   padding: 0 0 2rem 0;
-  
+
   &:before {
     content: '';
     position: absolute;
@@ -68,23 +68,23 @@ const CommandStructureContainer = styled.div`
     backdrop-filter: blur(3px);
     z-index: 0;
   }
-  
+
   & > * {
     position: relative;
     z-index: 1;
   }
 `;
 
-const PageTitle = styled.h1`
+const _PageTitle = styled.h1`
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
   color: #1e40af;
   margin-bottom: 1rem;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
-const PageSubtitle = styled.h2`
+const _PageSubtitle = styled.h2`
   text-align: center;
   font-size: 1.2rem;
   color: #64748b;
@@ -93,7 +93,7 @@ const PageSubtitle = styled.h2`
 `;
 
 // Header container for logo and title
-const PageHeader = styled.div`
+const _PageHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,17 +102,17 @@ const PageHeader = styled.div`
 `;
 
 // Logo styling
-const Logo = styled.img`
+const _Logo = styled.img`
   width: 100px;
   height: 100px;
   object-fit: contain;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
   transition: transform 0.3s ease;
-  
+
   &:hover {
     transform: scale(1.05);
   }
-  
+
   @media (max-width: 768px) {
     width: 80px;
     height: 80px;
@@ -126,13 +126,13 @@ const ChartContainer = styled.div`
   background: transparent;
   padding: 3rem;
   overflow: auto;
-  
+
   /* Custom OrgChart styling to match reference exactly */
   .orgchart {
     background: transparent;
     font-family: Arial, sans-serif;
   }
-  
+
   .orgchart .node {
     box-sizing: border-box;
     display: inline-block;
@@ -146,7 +146,7 @@ const ChartContainer = styled.div`
     height: 55px;
     cursor: pointer;
   }
-  
+
   /* Rank/Title styling */
   .orgchart .node .title {
     font-size: 11px;
@@ -155,7 +155,7 @@ const ChartContainer = styled.div`
     line-height: 1.1;
     color: #000;
   }
-  
+
   /* Department styling */
   .orgchart .node .content {
     font-size: 9px;
@@ -163,121 +163,121 @@ const ChartContainer = styled.div`
     line-height: 1.1;
     color: #000;
   }
-  
+
   /* Color scheme matching reference image */
   .orgchart .node.commander {
-    background-color: #F1C40F;
+    background-color: #f1c40f;
     color: #000;
   }
-  
+
   .orgchart .node.chief-superintendent {
-    background-color: #7F8C8D;
+    background-color: #7f8c8d;
     color: #fff;
   }
-  
+
   .orgchart .node.chief-superintendent .title,
   .orgchart .node.chief-superintendent .content {
     color: #fff;
   }
-  
+
   .orgchart .node.superintendent {
-    background-color: #7F8C8D;
+    background-color: #7f8c8d;
     color: #fff;
   }
-  
+
   .orgchart .node.superintendent .title,
   .orgchart .node.superintendent .content {
     color: #fff;
   }
-  
+
   .orgchart .node.operations-manager {
-    background-color: #7F8C8D;
+    background-color: #7f8c8d;
     color: #fff;
   }
-  
+
   .orgchart .node.operations-manager .title,
   .orgchart .node.operations-manager .content {
     color: #fff;
   }
-  
+
   .orgchart .node.inspector {
-    background-color: #D68910;
+    background-color: #d68910;
     color: #fff;
   }
-  
+
   .orgchart .node.inspector .title,
   .orgchart .node.inspector .content {
     color: #fff;
   }
-  
+
   .orgchart .node.chief-inspector {
-    background-color: #D68910;
+    background-color: #d68910;
     color: #fff;
   }
-  
+
   .orgchart .node.chief-inspector .title,
   .orgchart .node.chief-inspector .content {
     color: #fff;
   }
-  
+
   .orgchart .node.sergeant {
-    background-color: #3498DB;
+    background-color: #3498db;
     color: #fff;
   }
-  
+
   .orgchart .node.sergeant .title,
   .orgchart .node.sergeant .content {
     color: #fff;
   }
-  
+
   .orgchart .node.constable {
-    background-color: #85C1E9;
+    background-color: #85c1e9;
     color: #000;
   }
-  
+
   .orgchart .node.ambulance {
-    background-color: #27AE60;
+    background-color: #27ae60;
     color: #fff;
   }
-  
+
   .orgchart .node.ambulance .title,
   .orgchart .node.ambulance .content {
     color: #fff;
   }
-  
+
   .orgchart .node.fire-brigade {
-    background-color: #8B4513;
+    background-color: #8b4513;
     color: #fff;
   }
-  
+
   .orgchart .node.fire-brigade .title,
   .orgchart .node.fire-brigade .content {
     color: #fff;
   }
-  
+
   .orgchart .node.civilian {
-    background-color: #27AE60;
+    background-color: #27ae60;
     color: #fff;
   }
-  
+
   .orgchart .node.civilian .title,
   .orgchart .node.civilian .content {
     color: #fff;
   }
-  
+
   /* Connection lines styling */
   .orgchart .lines .downLine {
     border-left: 2px solid #000;
   }
-  
+
   .orgchart .lines .leftLine {
     border-top: 2px solid #000;
   }
-  
+
   .orgchart .lines .rightLine {
     border-top: 2px solid #000;
   }
-  
+
   .orgchart .lines .topLine {
     border-left: 2px solid #000;
   }
@@ -289,20 +289,17 @@ const CommandStructureImage = styled.img`
   height: auto;
   max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  
+
   &:hover {
     transform: scale(1.02);
   }
-  
+
   @media (max-width: 768px) {
     border-radius: 4px;
   }
 `;
-
-
-
 
 const CommandStructure = () => {
   return (
@@ -314,10 +311,10 @@ const CommandStructure = () => {
           <HeroSubtitle>Central East RPC - Metropolitan Police Service Structure</HeroSubtitle>
         </HeroOverlay>
       </HeroContainer>
-      
+
       <ChartContainer>
-        <CommandStructureImage 
-          src="/assets/CERPCorg.png" 
+        <CommandStructureImage
+          src="/assets/CERPCorg.png"
           alt="CERPC Organizational Chart - Metropolitan Police Service Structure"
           loading="lazy"
         />
